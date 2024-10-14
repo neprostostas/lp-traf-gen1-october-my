@@ -337,14 +337,14 @@ body {
   bottom: 0;
   width: 100%;
   object-fit: cover;
-   height: calc(100vh + 270px);
+  height: calc(100vh + 270px);
 
 
   opacity: 0.53;
   mix-blend-mode: overlay;
 }
 
-.title, .join {
+.main-inner .title, .join {
   pointer-events: none;
   transform: rotate(-10deg) skewX(-10deg);
 
@@ -366,7 +366,7 @@ body {
 }
 
 
-.title {
+.main-inner .title {
   top: -3.65vmax;
   /* top: -70px; */
   max-width: 32.03vmax;
@@ -385,7 +385,7 @@ body {
   width: 100%;
 }
 
-:is(.title, .join) span {
+:is(.main-inner .title, .join) span {
   color: #00FFC2;
 }
 
@@ -394,9 +394,9 @@ body {
 
 .weapon {
   width: 52.08vmax;
-   /*width: 1000px;*/
+  /*width: 1000px;*/
   height: 28.33vmax;
-   /*height: 544px;*/
+  /*height: 544px;*/
 }
 
 .circle {
@@ -1356,7 +1356,7 @@ body {
 @media (min-width:2400px) {
 
 
-  .title {
+  .main-inner .title {
     max-width: 37vmax;
   }
 
@@ -1409,7 +1409,7 @@ body {
     width: 198px;
     height: 53px;
   }
-  .title, .join {
+  .main-inner .title, .join {
 
 
 
@@ -1423,7 +1423,7 @@ body {
     text-transform: uppercase;
   }
 
-  .title {
+  .main-inner .title {
     top: 0;
     max-width: 347px;
     margin: 0 auto;
